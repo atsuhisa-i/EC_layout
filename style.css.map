@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "mobile.scss",
+        "desktop.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
