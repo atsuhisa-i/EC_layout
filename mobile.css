@@ -1,4 +1,21 @@
 h1 a.brandname-link {
   text-decoration: none;
 }
+
+.mobile-menu__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu__btn > span {
+  background-color: black;
+  width: 35px;
+  height: 2px;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.mobile-menu__btn > span:last-child {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=mobile.css.map */
