@@ -140,24 +140,29 @@ legend {
   display: none;
 }
 
-h1 a.brandname-link {
-  text-decoration: none;
-}
-
-.mobile-menu__btn {
-  background-color: transparent;
-  border: none;
-}
-
-.mobile-menu__btn > span {
-  background-color: black;
-  width: 35px;
-  height: 2px;
-  display: block;
-  margin-bottom: 9px;
-}
-
-.mobile-menu__btn > span:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 600px) {
+  h1 a.brandname-link {
+    text-decoration: none;
+  }
+  form.pc-header-search-form {
+    display: none;
+  }
+  form button.submit-btn {
+    display: none;
+  }
+  .mobile-menu__btn {
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-menu__btn > span {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+  }
+  .mobile-menu__btn > span:last-child {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

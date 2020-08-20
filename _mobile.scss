@@ -6,6 +6,16 @@ h1 {
   }
 }
 
+form {
+  &.pc-header-search-form {
+    display: none;
+  }
+  button {
+    &.submit-btn {
+      display: none;
+    }
+  }
+}
 .mobile-menu__btn {
   background-color: transparent;
   border: none;
