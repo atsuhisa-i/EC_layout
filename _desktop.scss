@@ -1,5 +1,19 @@
+.mobile-cart-icon {
+  display: none;
+}
+
+
+
 button {
   &.mobile-menu__btn {
     display: none;
+  }
+}
+
+nav {
+  ul{
+    &.pcmenu {
+      display: block;
+    }
   }
 }
