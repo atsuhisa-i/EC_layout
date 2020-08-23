@@ -1,0 +1,43 @@
+.header__inner {
+  height: 100%;
+  h1 {
+    height: 100%;
+    border-right: 1px solid #ccc;
+  }
+}
+
+
+
+.mobile-cart-icon {
+  display: none;
+}
+
+
+
+button {
+  &.mobile-menu__btn {
+    display: none;
+  }
+}
+
+nav {
+  width: 550px;
+  padding-left: 15px;
+  padding-right: 15px;
+  ul{
+    &.pcmenu {
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      li {
+        &:nth-child(5) {
+          border-right: 1px solid #ccc;
+          padding-right: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.header-search-form {
+  input {
+    &.search-form {
+      display: none;
+    }
+    &.submit-btn {
+      display: none;
+    }
+  }
+}
+
+
+nav {
+  ul{
+    &.pcmenu {
+      display: none;
+    }
+  }
+  .mobile-menu__btn {
+    background-color: transparent;
+    border: none;
+    & > span {
+      background-color: black;
+      width: 35px;
+      height: 2px;
+      display: block;
+      margin-bottom: 9px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

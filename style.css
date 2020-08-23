@@ -1,21 +1,255 @@
-h1 a.brandname-link {
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #ccc;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__inner h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner h1 .brandname-link {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
   text-decoration: none;
+  color: #222;
 }
 
-.mobile-menu__btn {
-  background-color: transparent;
-  border: none;
+@media screen and (max-width: 963px) {
+  .header-search-form input.search-form {
+    display: none;
+  }
+  .header-search-form input.submit-btn {
+    display: none;
+  }
+  nav ul.pcmenu {
+    display: none;
+  }
+  nav .mobile-menu__btn {
+    background-color: transparent;
+    border: none;
+  }
+  nav .mobile-menu__btn > span {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+  }
+  nav .mobile-menu__btn > span:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.mobile-menu__btn > span {
-  background-color: black;
-  width: 35px;
-  height: 2px;
-  display: block;
-  margin-bottom: 9px;
-}
-
-.mobile-menu__btn > span:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 964px) {
+  .header__inner {
+    height: 100%;
+  }
+  .header__inner h1 {
+    height: 100%;
+    border-right: 1px solid #ccc;
+  }
+  .mobile-cart-icon {
+    display: none;
+  }
+  button.mobile-menu__btn {
+    display: none;
+  }
+  nav {
+    width: 550px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  nav ul.pcmenu {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav ul.pcmenu li:nth-child(5) {
+    border-right: 1px solid #ccc;
+    padding-right: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

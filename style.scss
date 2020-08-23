@@ -1,5 +1,10 @@
-@import 'mobile.scss';
+@import 'reset.scss';
+@import 'base.scss';
 
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 963px) {
+  @import 'mobile.scss';
+}
+
+@media screen and (min-width: 964px) {
   @import 'desktop.scss';
 }
