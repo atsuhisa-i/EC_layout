@@ -4,6 +4,10 @@
     height: 100%;
     border-right: 1px solid #ccc;
   }
+  .header-search-form {
+    width: 100%;
+    padding-left: 15px;
+  }
 }
 
 
@@ -21,7 +25,7 @@ button {
 }
 
 nav {
-  width: 550px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   ul{
@@ -31,11 +35,13 @@ nav {
       font-size: 12px;
       font-weight: bold;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       li {
+        padding-right: 15px;
         &:nth-child(5) {
           border-right: 1px solid #ccc;
-          padding-right: 18px;
+          padding-right: 40px !important;
+          margin-right: 40px;
         }
       }
     }
