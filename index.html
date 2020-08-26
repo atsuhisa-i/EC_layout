@@ -8,37 +8,51 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <section>
-    <header class="header">
-      <div class="header__inner">
-        <h1>
-          <a href="#" class="brandname-link">ecname</a>
-        </h1>
-        <div class="header-search-form">
-          <form action="#" method="get" class="pc-header-search-form">
-            <input type="text" value="" placeholder="search" class="search-form">
-            <input type="button" value="submit" class="submit-btn">
-          </form>
-          <a href="#" class="mobile-cart-icon">cart</a>
+  <div id="global-container">
+    <div class="container">
+      <header class="header">
+        <div class="header__inner">
+          <h1>
+            <a href="#" class="brandname-link">ecname</a>
+          </h1>
+          <div class="header-search-form">
+            <form action="#" method="get" class="pc-header-search-form">
+              <input type="text" value="" placeholder="search" class="search-form">
+              <input type="button" value="submit" class="submit-btn">
+            </form>
+            <a href="#" class="mobile-cart-icon">cart</a>
+          </div>
+          <nav>
+            <ul class="pcmenu">
+              <li class="menu_brands"><a href="#">BRANDS</a></li>
+              <li><a href="#">CATEGORIES</a></li>
+              <li><a href="#">COLLECTION</a></li>
+              <li><a href="#">DEALERS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+            <button class="mobile-menu__btn menu-open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
         </div>
-        <nav>
-          <ul class="pcmenu">
-            <li class="menu_brands"><a href="#">BRANDS</a></li>
-            <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">COLLECTION</a></li>
-            <li><a href="#">DEALERS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">CART</a></li>
-          </ul>
-          <button class="mobile-menu__btn menu-open">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      </div>
-    </header>
-  </section>
+      </header>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item"><a href="#">BRANDS</a></li>
+        <li class="mobile-menu__item"><a href="#">CATEGORIES</a></li>
+        <li class="mobile-menu__item"><a href="#">COLLECTION</a></li>
+        <li class="mobile-menu__item"><a href="#">DEALERS</a></li>
+        <li class="mobile-menu__item"><a href="#">NEWS</a></li>
+        <li class="mobile-menu__item"><a href="#">LOGIN</a></li>
+        <li class="mobile-menu__item"><a href="#">CART</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
