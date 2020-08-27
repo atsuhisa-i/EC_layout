@@ -200,13 +200,13 @@ a {
   nav ul.pcmenu {
     display: none;
   }
-  nav .mobile-menu__btn {
+  .mobile-menu__btn {
     background-color: transparent;
     border: none;
     outline: none !important;
     cursor: pointer;
   }
-  nav .mobile-menu__btn > span {
+  .mobile-menu__btn > span {
     background-color: black;
     width: 35px;
     height: 2px;
@@ -217,11 +217,8 @@ a {
     transition: transform 0.7s;
     transition: transform 0.7s, -webkit-transform 0.7s;
   }
-  nav .mobile-menu__btn > span:last-child {
+  .mobile-menu__btn > span:last-child {
     margin-bottom: 0;
-  }
-  .menu-open {
-    background-color: black;
   }
   .menu-open .mobile-menu__btn > span {
     background-color: white;
