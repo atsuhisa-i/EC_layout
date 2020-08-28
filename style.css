@@ -140,6 +140,13 @@ legend {
   display: none;
 }
 
+#container {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  z-index: 2;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -185,6 +192,12 @@ legend {
   padding-right: 15px;
 }
 
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  top: 60px;
+}
+
 a {
   text-decoration: none;
   color: #222;
@@ -220,18 +233,18 @@ a {
   .mobile-menu__btn > span:last-child {
     margin-bottom: 0;
   }
-  .menu-open .mobile-menu__btn > span {
+  .mobile-menu__btn > span {
     background-color: white;
   }
-  .menu-open .mobile-menu__btn > span:nth-child(1) {
+  .mobile-menu__btn > span:nth-child(1) {
     -webkit-transform: translateY(11px) rotate(135deg);
             transform: translateY(11px) rotate(135deg);
   }
-  .menu-open .mobile-menu__btn > span:nth-child(2) {
+  .mobile-menu__btn > span:nth-child(2) {
     -webkit-transform: translateX(-18px) scaleX(0);
             transform: translateX(-18px) scaleX(0);
   }
-  .menu-open .mobile-menu__btn > span:nth-child(3) {
+  .mobile-menu__btn > span:nth-child(3) {
     -webkit-transform: translateY(-11px) rotate(-135deg);
             transform: translateY(-11px) rotate(-135deg);
   }

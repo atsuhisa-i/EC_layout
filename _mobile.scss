@@ -38,19 +38,19 @@ nav {
 
 .menu-open {
   // background-color: black;
+}
 
-  & .mobile-menu__btn {
-    & > span {
-      background-color: white;
-      &:nth-child(1) {
-        transform: translateY(11px) rotate(135deg);
-      }
-      &:nth-child(2) {
-        transform: translateX(-18px) scaleX(0);
-      }
-      &:nth-child(3) {
-        transform: translateY(-11px) rotate(-135deg);
-      }
+.mobile-menu__btn {
+  & > span {
+    background-color: white;
+    &:nth-child(1) {
+      transform: translateY(11px) rotate(135deg);
+    }
+    &:nth-child(2) {
+      transform: translateX(-18px) scaleX(0);
+    }
+    &:nth-child(3) {
+      transform: translateY(-11px) rotate(-135deg);
     }
   }
 }

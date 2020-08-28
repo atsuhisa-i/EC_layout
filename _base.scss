@@ -1,3 +1,10 @@
+#container {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  z-index: 2;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -24,6 +31,12 @@
       }
     }
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  top: 60px;
 }
 
 a {
