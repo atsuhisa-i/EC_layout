@@ -16,18 +16,45 @@ nav {
       display: none;
     }
   }
-  .mobile-menu__btn {
-    background-color: transparent;
-    border: none;
-    & > span {
-      background-color: black;
-      width: 35px;
-      height: 2px;
-      display: block;
-      margin-bottom: 9px;
-      &:last-child {
-        margin-bottom: 0;
+}
+
+.mobile-menu__btn {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  & > span {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    display: block;
+    margin-bottom: 9px;
+    transition: transform 0.7s;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.menu-open {
+  & #container {
+    transform: translate(-300px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+
+    .mobile-menu__btn {
+      & > span {
+        background-color: black;
+        &:nth-child(1) {
+          transform: translateY(11px) rotate(135deg);
+        }
+        &:nth-child(2) {
+          transform: translateX(-18px) scaleX(0);
+        }
+        &:nth-child(3) {
+          transform: translateY(-11px) rotate(-135deg);
+        }
       }
     }
   }
 }
+
