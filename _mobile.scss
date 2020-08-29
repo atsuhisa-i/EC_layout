@@ -37,20 +37,24 @@ nav {
 }
 
 .menu-open {
-  // background-color: black;
-}
+  & #container {
+    transform: translate(-300px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 
-.mobile-menu__btn {
-  & > span {
-    background-color: white;
-    &:nth-child(1) {
-      transform: translateY(11px) rotate(135deg);
-    }
-    &:nth-child(2) {
-      transform: translateX(-18px) scaleX(0);
-    }
-    &:nth-child(3) {
-      transform: translateY(-11px) rotate(-135deg);
+    .mobile-menu__btn {
+      & > span {
+        background-color: black;
+        &:nth-child(1) {
+          transform: translateY(11px) rotate(135deg);
+        }
+        &:nth-child(2) {
+          transform: translateX(-18px) scaleX(0);
+        }
+        &:nth-child(3) {
+          transform: translateY(-11px) rotate(-135deg);
+        }
+      }
     }
   }
 }
+
