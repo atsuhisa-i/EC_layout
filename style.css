@@ -277,18 +277,18 @@ a {
     width: 300px;
     height: 100vh;
   }
-  .mobile-menu .mobile-menu__main {
+  .mobile-menu__main {
     padding-left: 80px;
   }
-  .mobile-menu .mobile-menu__main > li {
+  .mobile-menu__main .mobile-menu__item {
     font-size: 22px;
     margin-top: 15px;
     font-weight: bold;
   }
-  .mobile-menu .mobile-menu__main > li:nth-child(1) {
+  .mobile-menu__main .mobile-menu__item:nth-child(1) {
     margin-top: 45px;
   }
-  .mobile-menu .mobile-menu__main > li > a {
+  .mobile-menu__main .mobile-menu__item > a {
     color: white;
   }
 }

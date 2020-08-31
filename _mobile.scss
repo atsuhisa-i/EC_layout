@@ -75,9 +75,9 @@ nav {
   background-color: black;
   width: 300px;
   height: 100vh;
-  .mobile-menu__main {
+  &__main {
     padding-left: 80px;
-    & > li {
+    .mobile-menu__item {
       font-size: 22px;
       margin-top: 15px;
       font-weight: bold;
