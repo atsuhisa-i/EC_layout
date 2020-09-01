@@ -284,12 +284,20 @@ a {
     font-size: 22px;
     margin-top: 15px;
     font-weight: bold;
+    color: white;
   }
   .mobile-menu__main .mobile-menu__item:nth-child(1) {
     margin-top: 45px;
   }
   .mobile-menu__main .mobile-menu__item > a {
     color: white;
+  }
+  .mobile-menu__main .mobile-menu__item .drop-nav {
+    display: none;
+  }
+  .mobile-menu__main .mobile-menu__item .drop-nav > li > a {
+    color: white;
+    display: block;
   }
 }
 

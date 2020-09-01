@@ -81,11 +81,21 @@ nav {
       font-size: 22px;
       margin-top: 15px;
       font-weight: bold;
+      color: white;
       &:nth-child(1) {
         margin-top: 45px;
       }
       & > a {
         color: white;
+      }
+      .drop-nav {
+        display: none;
+        & > li {
+          & > a {
+          color: white;
+          display: block;
+          }
+        }
       }
     }
   }
