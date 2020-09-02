@@ -292,8 +292,8 @@ a {
   .mobile-menu__main .mobile-menu__item > a {
     color: white;
   }
-  .mobile-menu__main .mobile-menu__item .drop-nav {
-    display: none;
+  .mobile-menu__main .mobile-menu__item .drop-nav > li {
+    display: block;
   }
   .mobile-menu__main .mobile-menu__item .drop-nav > li > a {
     color: white;

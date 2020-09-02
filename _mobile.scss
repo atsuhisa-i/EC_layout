@@ -89,8 +89,9 @@ nav {
         color: white;
       }
       .drop-nav {
-        display: none;
+        // display: none;
         & > li {
+          display: block;
           & > a {
           color: white;
           display: block;
