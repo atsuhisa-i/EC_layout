@@ -37,10 +37,11 @@
 .mobile-menu {
   position: fixed;
   right: 0;
-  top: 60px;
+  top: 0;
 }
 
 a {
   text-decoration: none;
   color: #222;
+  cursor: pointer;
 }
