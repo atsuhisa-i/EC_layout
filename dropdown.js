@@ -6,4 +6,7 @@ $(".mobile-menu__item").click(function() {
   }else{
     $(".drop-nav:not(:animated)", this).slideUp('fast');
   }
+  $(".mobile-menu ul li.mobile-menu__item").hover(function() {
+    $(".drop-nav").slideUp("fast");
+  });
 });
