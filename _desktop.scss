@@ -45,3 +45,15 @@ nav {
     }
   }
 }
+
+.products {
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .products__list {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  }
+}

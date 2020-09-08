@@ -49,3 +49,22 @@ a {
 .swiper-container {
   margin-top: 70px;
 }
+
+.products {
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .products__list {
+      flex-basis: 50%;
+      max-width: 50%;
+      .product-cover {
+        .product-img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
