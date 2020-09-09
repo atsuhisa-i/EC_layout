@@ -58,10 +58,15 @@ a {
     .products__list {
       flex-basis: 50%;
       max-width: 50%;
-      .product-cover {
-        .product-img {
-          img {
-            width: 100%;
+      &__inner {
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        .product-cover {
+          padding: 30px 30px 10px;
+          .product-img {
+            img {
+              width: 100%;
+            }
           }
         }
       }

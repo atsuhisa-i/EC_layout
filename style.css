@@ -227,7 +227,16 @@ a {
   max-width: 50%;
 }
 
-.products__inner .products__list .product-cover .product-img img {
+.products__inner .products__list__inner {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.products__inner .products__list__inner .product-cover {
+  padding: 30px 30px 10px;
+}
+
+.products__inner .products__list__inner .product-cover .product-img img {
   width: 100%;
 }
 
