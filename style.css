@@ -143,7 +143,6 @@ legend {
 #container {
   position: relative;
   background-color: white;
-  height: 100vh;
   z-index: 2;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -204,6 +203,54 @@ a {
   text-decoration: none;
   color: #222;
   cursor: pointer;
+}
+
+.swiper-container {
+  margin-top: 72px;
+}
+
+.brands {
+  border-top: 1px solid #ddd;
+}
+
+.brands .brand-lists > li {
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.products__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products__inner .products__list {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-width: 50%;
+}
+
+.products__inner .products__list__inner {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.products__inner .products__list__inner .product-cover {
+  padding: 30px 30px 10px;
+}
+
+.products__inner .products__list__inner .product-cover .product-img img {
+  width: 100%;
 }
 
 @media screen and (max-width: 963px) {
@@ -316,9 +363,7 @@ a {
     display: none;
   }
   nav {
-    width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
   }
   nav ul.pcmenu {
     width: 100%;
@@ -339,6 +384,44 @@ a {
     border-right: 1px solid #ccc;
     padding-right: 40px !important;
     margin-right: 40px;
+  }
+  .swiper__brand-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .swiper__brand-lists .swiper-container {
+    margin-left: 0 !important;
+    margin-right: unset !important;
+    border-bottom: 1px solid #ddd;
+  }
+  .swiper__brand-lists .brands {
+    margin-top: 72px;
+    width: calc(100% - 600px);
+  }
+  .swiper__brand-lists .brands .brand-lists > li {
+    height: 133px;
+    line-height: 133px;
+    padding-left: 30px;
+    font-size: 25px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .products__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .products__inner .products__list {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

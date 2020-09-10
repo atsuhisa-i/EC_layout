@@ -1,7 +1,7 @@
 #container {
   position: relative;
   background-color: white;
-  height: 100vh;
+  // height: 100vh;
   z-index: 2;
   transition: all 0.5s;
 }
@@ -44,4 +44,47 @@ a {
   text-decoration: none;
   color: #222;
   cursor: pointer;
+}
+
+.swiper-container {
+  margin-top: 72px;
+}
+.brands {
+border-top: 1px solid #ddd;
+  .brand-lists {
+    // width: 600px;
+    // margin: 0 auto;
+    & > li {
+      font-size: 18px;
+      font-weight: 600;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+  }
+}
+
+.products {
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .products__list {
+      flex-basis: 50%;
+      max-width: 50%;
+      &__inner {
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        .product-cover {
+          padding: 30px 30px 10px;
+          .product-img {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
