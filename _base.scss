@@ -47,7 +47,22 @@ a {
 }
 
 .swiper-container {
-  margin-top: 70px;
+  margin-top: 72px;
+}
+.brands {
+border-top: 1px solid #ddd;
+  .brand-lists {
+    // width: 600px;
+    // margin: 0 auto;
+    & > li {
+      font-size: 18px;
+      font-weight: 600;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+  }
 }
 
 .products {

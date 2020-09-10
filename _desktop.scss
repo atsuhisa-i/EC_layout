@@ -46,6 +46,29 @@ nav {
   }
 }
 
+.swiper__brand-lists {
+  display: flex;
+  .swiper-container {
+    margin-left: 0 !important;
+    margin-right: unset !important;
+    border-bottom: 1px solid #ddd;
+  }
+  .brands {
+    margin-top: 72px;
+    width: calc(100% - 600px);
+    .brand-lists {
+      & > li {
+        height: 133px;
+        line-height: 133px;
+        padding-left: 30px;
+        font-size: 25px;
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+}
+
 .products {
   &__inner {
     display: flex;
