@@ -378,12 +378,35 @@ a {
             justify-content: flex-end;
   }
   nav ul.pcmenu li {
+    position: relative;
     padding-right: 15px;
   }
   nav ul.pcmenu li:nth-child(5) {
     border-right: 1px solid #ccc;
     padding-right: 40px !important;
     margin-right: 40px;
+  }
+  nav .sub-menu {
+    position: absolute;
+    display: none;
+  }
+  nav .menu_brands:hover ul {
+    display: block;
+    width: 120px;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    text-align: center;
+  }
+  nav .menu_brands:hover ul > li {
+    height: 25px;
+    line-height: 25px;
+  }
+  nav .menu_brands:hover ul > li:nth-child(1) {
+    border-bottom: 1px solid #ccc;
+  }
+  nav .menu_brands:hover ul > li:nth-child(2) {
+    border-bottom: 1px solid #ccc;
   }
   .swiper__brand-lists {
     display: -webkit-box;
