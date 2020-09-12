@@ -390,7 +390,7 @@ a {
     position: absolute;
     display: none;
   }
-  nav .menu_brands:hover ul {
+  nav .menu-title:hover ul {
     display: block;
     width: 120px;
     background-color: white;
@@ -398,14 +398,14 @@ a {
     font-size: 13px;
     text-align: center;
   }
-  nav .menu_brands:hover ul > li {
+  nav .menu-title:hover ul > li {
     height: 25px;
     line-height: 25px;
   }
-  nav .menu_brands:hover ul > li:nth-child(1) {
+  nav .menu-title:hover ul > li:nth-child(1) {
     border-bottom: 1px solid #ccc;
   }
-  nav .menu_brands:hover ul > li:nth-child(2) {
+  nav .menu-title:hover ul > li:nth-child(2) {
     border-bottom: 1px solid #ccc;
   }
   .swiper__brand-lists {
