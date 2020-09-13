@@ -424,7 +424,6 @@ a {
     border-bottom: 1px solid #ddd;
   }
   .swiper__brand-lists .brands {
-    margin-top: 72px;
     width: calc(100% - 600px);
   }
   .swiper__brand-lists .brands .brand-lists > li {
