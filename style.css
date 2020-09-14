@@ -249,8 +249,27 @@ a {
   padding: 30px 30px 10px;
 }
 
+.products__inner .products__list__inner .product-cover .product-img {
+  position: relative;
+}
+
 .products__inner .products__list__inner .product-cover .product-img img {
   width: 100%;
+}
+
+.products__inner .products__list__inner .product-cover .product-img .product-img__on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.products .product-img:hover .product-img__on {
+  display: block !important;
+}
+
+.products .product-img:hover .product-img__on > img {
+  height: 258px;
 }
 
 @media screen and (max-width: 963px) {
