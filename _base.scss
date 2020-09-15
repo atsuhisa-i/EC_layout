@@ -98,7 +98,4 @@ border-top: 1px solid #ddd;
 
 .products .product-img:hover .product-img__on {
   display: block !important;
-  & > img {
-    height: 258px;
-  }
 }
