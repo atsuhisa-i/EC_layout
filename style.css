@@ -283,8 +283,9 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
-  .mobile-items .mobile-curt {
+  .mobile-items .mobile-cart {
     margin-right: 10px;
+    font-size: 1.4em;
   }
   .mobile-menu__btn {
     background-color: transparent;
