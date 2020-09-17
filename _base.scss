@@ -79,12 +79,23 @@ border-top: 1px solid #ddd;
         .product-cover {
           padding: 30px 30px 10px;
           .product-img {
+            position: relative;
             img {
               width: 100%;
+            }
+            .product-img__on {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: none;
             }
           }
         }
       }
     }
   }
+}
+
+.products .product-img:hover .product-img__on {
+  display: block !important;
 }
