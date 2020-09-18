@@ -283,8 +283,9 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
-  .mobile-items .mobile-curt {
+  .mobile-items .mobile-cart {
     margin-right: 10px;
+    font-size: 1.4em;
   }
   .mobile-menu__btn {
     background-color: transparent;
@@ -375,6 +376,13 @@ a {
   .header__inner .header-search-form {
     width: 100%;
     padding-left: 15px;
+  }
+  .header__inner .header-search-form .pc-header-search-form > input {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    font-size: 15px;
   }
   .mobile-cart-icon {
     display: none;
