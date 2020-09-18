@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EC Layout</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <header class="header">
+        <div class="header__inner">
+          <h1>
+            <a href="#" class="brandname-link">ecname</a>
+          </h1>
+          <div class="header-search-form">
+            <form action="#" method="get" class="pc-header-search-form">
+              <input type="text" value="" placeholder="&#xf002; search" class="search-form" >
+            </form>
+          </div>
+          <nav>
+            <ul class="pcmenu">
+              <li class="menu-title">
+                <a href="#">BRANDS</a>
+                <ul class="sub-menu">
+                  <li><a href="#">BRAND1</a></li>
+                  <li><a href="#">BRAND2</a></li>
+                  <li><a href="#">BRAND3</a></li>
+                </ul>
+              </li>
+              <li class="menu-title">
+                <a href="#">CATEGORIES</a>
+                <ul class="sub-menu">
+                  <li><a href="#">CATEGORY1</a></li>
+                  <li><a href="#">CATEGORY2</a></li>
+                  <li><a href="#">CATEGORY3</a></li>
+                </ul>
+              </li>
+              <li class="menu-title">
+                <a href="#">COLLECTION</a>
+                <ul class="sub-menu">
+                  <li><a href="#">COLLECTION1</a></li>
+                  <li><a href="#">COLLECTION2</a></li>
+                  <li><a href="#">COLLECTION3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">DEALERS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile-items">
+            <div class="mobile-cart">
+              <a href="#" class="mobile-cart-icon"><i class="fas fa-shopping-cart cart-style"></i></a>
+            </div>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">BRANDS
+          <ul class="drop-nav">
+            <li><a href="#">brand1</a></li>
+            <li><a href="#">brand2</a></li>
+            <li><a href="#">brand3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">CATEGORIES
+          <ul class="drop-nav">
+            <li><a href="#">category1</a></li>
+            <li><a href="#">category2</a></li>
+            <li><a href="#">category3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">COLLECTION
+          <ul class="drop-nav">              
+            <li><a href="#">collection1</a></li>
+            <li><a href="#">collection2</a></li>
+            <li><a href="#">collection3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item"><a href="#">DEALERS</a></li>
+        <li class="mobile-menu__item"><a href="#">NEWS</a></li>
+        <li class="mobile-menu__item"><a href="#">LOGIN</a></li>          
+        <li class="mobile-menu__item"><a href="#">CART</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="dropdown.js"></script>
+  <script src="mobile-menu.js"></script>
+</body>
+</html>
