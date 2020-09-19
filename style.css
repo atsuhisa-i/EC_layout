@@ -268,6 +268,24 @@ a {
   display: block !important;
 }
 
+nav#breadcrumb {
+  height: 35px;
+  padding-top: 72px;
+  border-bottom: 1px solid #ddd;
+  font-size: 9px;
+}
+
+nav#breadcrumb ul.breadcrum-pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 963px) {
   .header-search-form input.search-form {
     display: none;
