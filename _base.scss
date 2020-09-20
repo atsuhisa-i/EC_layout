@@ -113,3 +113,11 @@ nav#breadcrumb {
     }
   }
 }
+
+.product-img {
+  height: 100%;
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

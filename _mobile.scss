@@ -105,3 +105,8 @@ nav {
   }
 }
 
+.product-img-list-item {
+  & > img {
+    width: 100%;
+  }
+}

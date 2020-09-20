@@ -113,3 +113,25 @@ nav .menu-title:hover ul {
     }
   }
 }
+
+#product {
+  display: flex;
+  .product-img {
+    flex-basis: 50%;
+    .product-img-list-item {
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+  .product-detail {
+    flex-basis: 50%;
+    position: relative;
+    .product-detail-inner {
+      position: fixed;
+      padding: 60px;
+    }
+  }
+}
