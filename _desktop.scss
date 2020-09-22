@@ -128,10 +128,50 @@ nav .menu-title:hover ul {
   }
   .product-detail {
     flex-basis: 50%;
-    position: relative;
     .product-detail-inner {
-      position: fixed;
+      position: sticky;
+      height: 100vh;
+      top: 60px;
       padding: 60px;
+      &-brand {
+        font-size: 13px;
+      }
+      &-title {
+        margin: 4px 0 6px;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .product-price-wrap {
+        margin: 0 0 23px;
+      }
+      .product-explain {
+        margin-bottom: 35px;
+      }
+      .product-options {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        .product-option {
+          display: flex;
+          flex-basis: 45%;
+          border-bottom: 1px solid #222;
+          label {
+            font-size: 11px;
+            margin-right: 7px;
+            height: 25px;
+            line-height: 25px;
+          }
+          .select-wrapper {
+            width: 100%;
+            text-align: center;
+            & > select {
+              font-size: 13px;
+              border: none;
+              appearance: none;
+            }
+          } 
+        }
+      }
     }
   }
 }
