@@ -599,5 +599,28 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
     cursor: pointer;
     border-style: none;
   }
+  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span {
+    background-color: black;
+    width: 12px;
+    height: 2px;
+    display: block;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(1) {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(2) {
+    -webkit-transform: translateY(10px) rotate(90deg);
+            transform: translateY(10px) rotate(90deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
