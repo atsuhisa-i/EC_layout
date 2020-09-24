@@ -622,5 +622,30 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
     -webkit-transform: translateY(10px) rotate(90deg);
             transform: translateY(10px) rotate(90deg);
   }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table {
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table .parts {
+    border-bottom: 1px solid #ddd;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:not(:first-of-type) td:not(:first-of-type) {
+    font-size: 13px;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:nth-of-type(2) td {
+    padding-top: 14px;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td {
+    border-right: 1px solid #ddd;
+    padding: 5px;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:first-of-type {
+    width: 40px;
+  }
+  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:last-of-type {
+    border-right: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
