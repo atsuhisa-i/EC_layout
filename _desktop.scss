@@ -256,10 +256,20 @@ nav .menu-title:hover ul {
     .related-product-list {
       flex-basis: 25%;
       max-width: 25%;
+      padding: 30px;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
       .related-product-list-inner {
         & > img {
           width: 100%;
         }
+      }
+      .view-more {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
       }
     }
   }
