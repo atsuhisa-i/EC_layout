@@ -128,9 +128,9 @@ nav .menu-title:hover ul {
   }
   .product-detail {
     flex-basis: 50%;
+    border-bottom: 1px solid #ddd;
     .product-detail-inner {
       position: sticky;
-      height: 100vh;
       top: 60px;
       padding: 60px;
       &-brand {
@@ -236,6 +236,29 @@ nav .menu-title:hover ul {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.related-product {
+  & > h2 {
+    height: 100px;
+    line-height: 100px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+  }
+  .related-product-inner {
+    display: flex;
+    .related-product-list {
+      flex-basis: 25%;
+      max-width: 25%;
+      .related-product-list-inner {
+        & > img {
+          width: 100%;
         }
       }
     }
