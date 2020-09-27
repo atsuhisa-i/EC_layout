@@ -684,5 +684,27 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
             align-items: center;
     font-weight: bold;
   }
+  footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+  }
+  footer .footer-list-item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    padding: 25px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  footer .footer-list-item > .footer-menu {
+    margin-bottom: 5px;
+  }
+  footer .copyright {
+    padding: 15px;
+    font-size: 10px;
+    color: #ddd;
+  }
 }
 /*# sourceMappingURL=style.css.map */

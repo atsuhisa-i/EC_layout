@@ -274,3 +274,25 @@ nav .menu-title:hover ul {
     }
   }
 }
+
+footer {
+  .footer-list {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    &-item {
+      flex-basis: 25%;
+      max-width: 25%;
+      padding: 25px;
+      font-size: 12px;
+      font-weight: bold;
+      & > .footer-menu {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .copyright {
+    padding: 15px;
+    font-size: 10px;
+    color: #ddd;
+  }
+}
