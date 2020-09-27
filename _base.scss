@@ -99,3 +99,25 @@ border-top: 1px solid #ddd;
 .products .product-img:hover .product-img__on {
   display: block !important;
 }
+
+nav#breadcrumb {
+  height: 35px;
+  padding-top: 72px;
+  border-bottom: 1px solid #ddd;
+  font-size: 9px;
+  ul.breadcrum-pc {
+    display: flex;
+    padding: 10px;
+    li.breadcrumb-item {
+      margin-right: 5px;
+    }
+  }
+}
+
+.product-img {
+  height: 100%;
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

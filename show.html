@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EC Layout</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <header class="header">
+        <div class="header__inner">
+          <h1>
+            <a href="#" class="brandname-link">ecname</a>
+          </h1>
+          <div class="header-search-form">
+            <form action="#" method="get" class="pc-header-search-form">
+              <input type="text" value="" placeholder="&#xf002; search" class="search-form" >
+            </form>
+          </div>
+          <nav>
+            <ul class="pcmenu">
+              <li class="menu-title">
+                <a href="#">BRANDS</a>
+                <ul class="sub-menu">
+                  <li><a href="#">BRAND1</a></li>
+                  <li><a href="#">BRAND2</a></li>
+                  <li><a href="#">BRAND3</a></li>
+                </ul>
+              </li>
+              <li class="menu-title">
+                <a href="#">CATEGORIES</a>
+                <ul class="sub-menu">
+                  <li><a href="#">CATEGORY1</a></li>
+                  <li><a href="#">CATEGORY2</a></li>
+                  <li><a href="#">CATEGORY3</a></li>
+                </ul>
+              </li>
+              <li class="menu-title">
+                <a href="#">COLLECTION</a>
+                <ul class="sub-menu">
+                  <li><a href="#">COLLECTION1</a></li>
+                  <li><a href="#">COLLECTION2</a></li>
+                  <li><a href="#">COLLECTION3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">DEALERS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile-items">
+            <div class="mobile-cart">
+              <a href="#" class="mobile-cart-icon"><i class="fas fa-shopping-cart cart-style"></i></a>
+            </div>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <nav id="breadcrumb">
+        <ul class="breadcrum-pc">
+          <li class="breadcrumb-item">TOP&nbsp;/</li>
+          <li class="breadcrumb-item">ONLINE STORE&nbsp;/</li>
+          <li class="breadcrumb-item">brand1&nbsp;/</li>
+          <li class="breadcrumb-item">product1</li>
+        </ul>
+      </nav>
+      <section id="product">
+        <div class="product-img">
+          <ul class="product-img-list">
+            <li class="product-img-list-item">
+              <img src="images/カーディガン.jpg" alt="">
+            </li>
+            <li class="product-img-list-item">
+              <img src="images/ネルシャツ.jpg" alt="">
+            </li>
+            <li class="product-img-list-item">
+              <img src="images/白シャツ.jpg" alt="">
+            </li>
+            <li class="product-img-list-item">
+              <img src="images/カーディガン.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="product-detail">
+          <div class="product-detail-inner">
+            <p class="product-detail-inner-brand">brand1</p>
+            <h1 class="product-detail-inner-title">シャツ</h1>
+            <form action="">
+              <div>
+                <p class="product-price-wrap">
+                  <span class="product-price">￥16000
+                    <small>+TAX</small>
+                  </span>
+                </p>
+              </div>
+              <div class="product-explain">
+                <p class="product-explain-jp">着回しの利くシンプルなデザイン。程よく身幅を持たせたボックスシルエット。男女問わず幅広く使用いただけます。サイドシームにブランドネームを付属。</p>
+                <p>&nbsp;</p>
+                <p class="product-explain-eng">A simple design that is easy to mix and match. A box silhouette with a moderate width. It can be widely used by both men and women. A brand name is attached to the side seam.</p>
+                <span class="readmore">read&nbsp;more</span>
+              </div>
+              <div class="product-options">
+                <div class="product-option">
+                  <label for="option1">Color</label>
+                  <div class="select-wrapper">
+                    <select name="options[Color]" id="option1" placeholder="SELECT">
+                      <option value="" disabled="disabled" selected="selected">SELECT</option>
+                      <option value="OLIVE DRAB">OLIVE DRAB</option>
+                      <option value="BLACK">BLACK</option>
+                      <option value="NAVY">NAVY</option>
+                      <option value="BEIGE">BEIGE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="product-option">
+                  <label for="option2">Size</label>
+                  <div class="select-wrapper">
+                    <select name="options[Size]" id="option2" placeholder="SELECT">
+                      <option value="" disabled="disabled" selected="selected">SELECT</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="buy-button">
+                <span>ADD TO CART</span>
+              </button>
+            </form>
+            <div class="product-content">
+              <div class="size-spec">
+                <div class="size-spec-inner">
+                  <p>spec</p>
+                  <div class="plus-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div id="size-spec-content">
+                  <table class="size-spec-table">
+                    <tbody>
+                      <tr class="parts">
+                        <td></td>
+                        <td>LENGTH</td>
+                        <td>SHOULDER</td>
+                        <td>CHEST</td>
+                        <td>SLEEVE</td>
+                      </tr>
+                      <tr>
+                        <td>S</td>
+                        <td>72</td>
+                        <td>49</td>
+                        <td>56</td>
+                        <td>61.5</td>
+                      </tr>
+                      <tr>
+                        <td>M</td>
+                        <td>74.5</td>
+                        <td>51</td>
+                        <td>59</td>
+                        <td>63.5</td>
+                      </tr>
+                      <tr>
+                        <td>L</td>
+                        <td>77</td>
+                        <td>53</td>
+                        <td>62</td>
+                        <td>65.5</td>
+                      </tr>
+                      <tr>
+                        <td>XL</td>
+                        <td>79.5</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>67.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="related-product">
+        <h2>RELATED&nbsp;ITEMS</h2>
+        <div class="related-product-inner">
+          <div class="related-product-list">
+            <a href="#">
+              <div class="related-product-list-inner">
+                <img src="images/カーディガン.jpg" alt="">
+              </div>
+              <p class="product-brand">Brand1</p>
+              <p class="product-title">カーディガン</p>
+              <p class="product-price">
+                <span>
+                  ¥30000
+                  <small>+TAX</small>
+                </span>
+              </p>
+            </a>
+          </div>
+          <div class="related-product-list">
+            <a href="#">
+              <div class="related-product-list-inner">
+                <img src="images/ネルシャツ.jpg" alt="">
+              </div>
+              <p class="product-brand">Brand1</p>
+              <p class="product-title">ネルシャツ</p>
+              <p class="product-price">
+                <span>
+                  ¥18000
+                  <small>+TAX</small>
+                </span>
+              </p>
+            </a>
+          </div>
+          <div class="related-product-list">
+            <a href="#">
+              <div class="related-product-list-inner">
+                <img src="images/白シャツ.jpg" alt="">
+              </div>
+              <p class="product-brand">Brand1</p>
+              <p class="product-title">白シャツ</p>
+              <p class="product-price">
+                <span>
+                  ¥15000
+                  <small>+TAX</small>
+                </span>
+              </p>
+            </a>
+          </div>
+          <div class="related-product-list">
+            <div class="view-more">
+              <a href="#">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-list">
+          <ul class="footer-list-item">
+            <li class="footer-menu">
+              <a href="#">HOME</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">BRANDS</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">CATEGORIES</a>
+            </li>
+          </ul>
+          <ul class="footer-list-item">
+            <li class="footer-menu">
+              <a href="#">COLLECTION</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">DEALERS</a>
+            </li>
+          </ul>
+          <ul class="footer-list-item">
+            <li class="footer-menu">
+              <a href="#">BRAND&nbsp;POLICY</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">SUPPORT</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="footer-list-item">
+            <li class="footer-menu">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">facebook</a>
+            </li>
+            <li class="footer-menu">
+              <a href="#">vimeo</a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">© ecname CO.,LTD. ALL RIGHTS RESERVED</p>
+      </footer>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">BRANDS
+          <ul class="drop-nav">
+            <li><a href="#">brand1</a></li>
+            <li><a href="#">brand2</a></li>
+            <li><a href="#">brand3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">CATEGORIES
+          <ul class="drop-nav">
+            <li><a href="#">category1</a></li>
+            <li><a href="#">category2</a></li>
+            <li><a href="#">category3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item">COLLECTION
+          <ul class="drop-nav">              
+            <li><a href="#">collection1</a></li>
+            <li><a href="#">collection2</a></li>
+            <li><a href="#">collection3</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item"><a href="#">DEALERS</a></li>
+        <li class="mobile-menu__item"><a href="#">NEWS</a></li>
+        <li class="mobile-menu__item"><a href="#">LOGIN</a></li>          
+        <li class="mobile-menu__item"><a href="#">CART</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="dropdown.js"></script>
+  <script src="mobile-menu.js"></script>
+</body>
+</html>
