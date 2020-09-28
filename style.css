@@ -300,6 +300,147 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
           flex-direction: column;
 }
 
+.product-detail-inner {
+  padding: 60px;
+}
+
+.product-detail-inner-brand {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.product-detail-inner-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-detail-inner form > div .product-price-wrap {
+  margin-bottom: 40px;
+}
+
+.product-detail-inner form > div .product-price-wrap .product-price {
+  font-size: 15px;
+}
+
+.product-detail-inner form .product-explain .readmore {
+  width: 100%;
+  text-align: right;
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.product-detail-inner form .product-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.product-detail-inner form .product-options .product-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  border-bottom: 1px solid #222;
+}
+
+.product-detail-inner form .product-options .product-option label {
+  font-size: 11px;
+  margin-right: 7px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.product-detail-inner form .product-options .product-option .select-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.product-detail-inner form .product-options .product-option .select-wrapper > select {
+  font-size: 13px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.product-detail-inner form .buy-button {
+  width: 100%;
+  height: 50px;
+  margin: 35px 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
+.product-detail-inner .product-content .size-spec .size-spec-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span {
+  background-color: black;
+  width: 12px;
+  height: 2px;
+  display: block;
+}
+
+.product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(1) {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+.product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(2) {
+  -webkit-transform: translateY(10px) rotate(90deg);
+          transform: translateY(10px) rotate(90deg);
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table {
+  text-align: center;
+  font-size: 11px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table .parts {
+  border-bottom: 1px solid #ddd;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:not(:first-of-type) td:not(:first-of-type) {
+  font-size: 13px;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:nth-of-type(2) td {
+  padding-top: 14px;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td {
+  border-right: 1px solid #ddd;
+  padding: 5px;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:first-of-type {
+  width: 40px;
+}
+
+.product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:last-of-type {
+  border-right: none;
+}
+
 @media screen and (max-width: 963px) {
   .header-search-form input.search-form {
     display: none;
@@ -533,119 +674,6 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
     position: -webkit-sticky;
     position: sticky;
     top: 60px;
-    padding: 60px;
-  }
-  #product .product-detail .product-detail-inner-brand {
-    font-size: 13px;
-  }
-  #product .product-detail .product-detail-inner-title {
-    margin: 4px 0 6px;
-    font-size: 19px;
-    font-weight: 600;
-  }
-  #product .product-detail .product-detail-inner .product-price-wrap {
-    margin: 0 0 23px;
-  }
-  #product .product-detail .product-detail-inner .product-explain {
-    margin-bottom: 50px;
-  }
-  #product .product-detail .product-detail-inner .product-explain .readmore {
-    font-size: 14px;
-    color: #ccc;
-    float: right;
-    cursor: pointer;
-  }
-  #product .product-detail .product-detail-inner .product-options {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  #product .product-detail .product-detail-inner .product-options .product-option {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
-    border-bottom: 1px solid #222;
-  }
-  #product .product-detail .product-detail-inner .product-options .product-option label {
-    font-size: 11px;
-    margin-right: 7px;
-    height: 25px;
-    line-height: 25px;
-  }
-  #product .product-detail .product-detail-inner .product-options .product-option .select-wrapper {
-    width: 100%;
-    text-align: center;
-  }
-  #product .product-detail .product-detail-inner .product-options .product-option .select-wrapper > select {
-    font-size: 13px;
-    border: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    cursor: pointer;
-  }
-  #product .product-detail .product-detail-inner .buy-button {
-    width: 100%;
-    height: 50px;
-    margin: 35px 0;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border-style: none;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 35px;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span {
-    background-color: black;
-    width: 12px;
-    height: 2px;
-    display: block;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(1) {
-    -webkit-transform: translateY(12px);
-            transform: translateY(12px);
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon > span:nth-child(2) {
-    -webkit-transform: translateY(10px) rotate(90deg);
-            transform: translateY(10px) rotate(90deg);
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table {
-    text-align: center;
-    font-size: 11px;
-    width: 100%;
-    table-layout: fixed;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table .parts {
-    border-bottom: 1px solid #ddd;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:not(:first-of-type) td:not(:first-of-type) {
-    font-size: 13px;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table tr:nth-of-type(2) td {
-    padding-top: 14px;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td {
-    border-right: 1px solid #ddd;
-    padding: 5px;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:first-of-type {
-    width: 40px;
-  }
-  #product .product-detail .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table td:last-of-type {
-    border-right: none;
   }
   .related-product > h2 {
     height: 100px;

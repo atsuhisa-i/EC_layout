@@ -121,3 +121,123 @@ nav#breadcrumb {
     flex-direction: column;
   }
 }
+
+.product-detail {
+  &-inner {
+    padding: 60px;
+    &-brand {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    &-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    form {
+      & > div {
+        .product-price-wrap {
+          margin-bottom: 40px;
+          .product-price {
+            font-size: 15px;
+          }
+        }
+      }
+      .product-explain {
+        .readmore {
+          width: 100%;
+          text-align: right;
+          display: block;
+          font-size: 14px;
+          color: #ccc;
+          cursor: pointer;
+          margin-bottom: 40px;
+        }
+      }
+      .product-options {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .product-option {
+          display: flex;
+          flex-basis: 45%;
+          border-bottom: 1px solid #222;
+          label {
+            font-size: 11px;
+            margin-right: 7px;
+            height: 25px;
+            line-height: 25px;
+          }
+          .select-wrapper {
+            width: 100%;
+            text-align: center;
+            & > select {
+              font-size: 13px;
+              border: none;
+              appearance: none;
+              cursor: pointer;
+            }
+          } 
+        }
+      }
+      .buy-button {
+        width: 100%;
+        height: 50px;
+        margin: 35px 0;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-style: none;
+      }
+    }
+    .product-content {
+      .size-spec {
+        .size-spec-inner {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 35px;
+          .plus-icon {
+            & > span {
+              background-color: black;
+              width: 12px;
+              height: 2px;
+              display: block;
+              &:nth-child(1) {
+                transform: translateY(12px);
+              }
+              &:nth-child(2) {
+                transform: translateY(10px) rotate(90deg);
+              }
+            }
+          }
+        }
+        #size-spec-content {
+          .size-spec-table {
+            text-align: center;
+            font-size: 11px;
+            width: 100%;
+            table-layout: fixed;
+            .parts {
+              border-bottom: 1px solid #ddd;
+            }
+            tr:not(:first-of-type) td:not(:first-of-type) {
+              font-size: 13px;
+            }
+            tr:nth-of-type(2) td {
+              padding-top: 14px;
+            }
+            td {
+              border-right: 1px solid #ddd;
+              padding: 5px;
+              &:first-of-type {
+                width: 40px;
+              }
+              &:last-of-type {
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
