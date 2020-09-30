@@ -409,6 +409,10 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
           transform: translateY(10px) rotate(90deg);
 }
 
+.product-detail-inner .product-content .size-spec #size-spec-content {
+  display: none;
+}
+
 .product-detail-inner .product-content .size-spec #size-spec-content .size-spec-table {
   text-align: center;
   font-size: 11px;
