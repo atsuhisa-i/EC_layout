@@ -7,6 +7,7 @@ var returnHeight;
 
 $(function(){
   $(".explain-content").each(function(){ //ターゲット(縮めるアイテム)
+    var thisHeight = $(this).height(); //ターゲットの高さを取得
     itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
     $(this).addClass("is-hide"); //CSSで指定した高さにする
     returnHeight = $(this).height(); //is-hideの高さを取得
