@@ -18,8 +18,8 @@ $(".readmore").click(function(){ //トリガーをクリックしたら
   if(!$(this).hasClass("is-show")) {
     var index = $(this).index(".readmore"); //トリガーが何個目
     var addHeight = itemHeights[index]; //個数に対応する高さを取得
-    $(this).addClass("is-show").prev().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
+    $(this).addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
   } else {
-    $(this).removeClass("is-show").prev().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
+    $(this).removeClass("is-show").next().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
   }
 });

@@ -150,7 +150,7 @@ nav#breadcrumb {
           overflow: hidden;
         }
         .explain-content.is-hide {
-          height: 80px;
+          height: 60px;
         }
         .explain-content::before {
           display: block;
@@ -163,28 +163,36 @@ nav#breadcrumb {
           background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
         }
         .readmore {
+          position: absolute;
+          bottom: 0;
+          z-index: 100;
           width: 100%;
           text-align: right;
           display: block;
           font-size: 14px;
           color: #ccc;
           cursor: pointer;
-          margin-bottom: 40px;
+          // margin-bottom: 40px;
           &::after {
-            content: "read more"
+            content: "read more";
+            height: 40px;
           }
+        }
+        .readmore.is-show {
+          bottom: -2em;
         }
         .readmore.is-show::after {
           content: "close"
         }
-        // .readmore.is-show + .explain-content::before {
-        //   display: none;
-        // } 
+        .readmore.is-show + .explain-content::before {
+          display: none;
+        } 
       }
       .product-options {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-top: 70px;
         .product-option {
           display: flex;
           flex-basis: 45%;

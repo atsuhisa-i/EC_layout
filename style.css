@@ -332,7 +332,7 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
 }
 
 .product-detail-inner form .product-explain .explain-content.is-hide {
-  height: 80px;
+  height: 60px;
 }
 
 .product-detail-inner form .product-explain .explain-content::before {
@@ -348,21 +348,32 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
 }
 
 .product-detail-inner form .product-explain .readmore {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
   width: 100%;
   text-align: right;
   display: block;
   font-size: 14px;
   color: #ccc;
   cursor: pointer;
-  margin-bottom: 40px;
 }
 
 .product-detail-inner form .product-explain .readmore::after {
   content: "read more";
+  height: 40px;
+}
+
+.product-detail-inner form .product-explain .readmore.is-show {
+  bottom: -2em;
 }
 
 .product-detail-inner form .product-explain .readmore.is-show::after {
   content: "close";
+}
+
+.product-detail-inner form .product-explain .readmore.is-show + .explain-content::before {
+  display: none;
 }
 
 .product-detail-inner form .product-options {
@@ -373,6 +384,7 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-top: 70px;
 }
 
 .product-detail-inner form .product-options .product-option {
