@@ -19,40 +19,26 @@
   display: block;
 }
 .m-lens-container img {
-  max-height: 344px;
-  max-width: 344px;
-}
-.product-img-list {
-  display: flex;
-  justify-content: space-between; /* 解説用 */
-  width: 700px; /* 解説用 */
-}
-.product-img-list-item {
-  display: table;
-  background: #fff; /* 解説用 */
-  text-align: center;
-  height: 344px;
-  width: 344px;
+  width: 100%;
 }
 .cell {
-  display: table-cell;
-  vertical-align: middle;
+  // display: table-cell;
+  // vertical-align: middle;
 }
 .product-img {
-  position: relative;
+  // position: relative;
 }
 .slides-container {
-  width: 344px;
+  width: 100%;
   overflow: hidden;
 }
 .zoom-area {
   display: none;
   position: absolute;
-  top: 0;
-  left: 369px;
+  left: 50%;
   border: 1px solid #ccc;
-  height: 520px;
-  width: 520px;
+  height: 400px;
+  max-width: 400px;
   overflow: hidden;
   z-index: 100;
 }
