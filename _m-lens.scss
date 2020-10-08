@@ -4,8 +4,6 @@
 }
 .m-lens {
   position: absolute;
-  top: 10px; /* JSで適切な値を設定する */
-  left: 20px; /* JSで適切な値を設定する */
   z-index: 2;
   background: #f57716;
   opacity: 0.3;
@@ -21,20 +19,14 @@
 .m-lens-container img {
   width: 100%;
 }
-.cell {
-  // display: table-cell;
-  // vertical-align: middle;
-}
-.product-img {
-  // position: relative;
-}
+
 .slides-container {
   width: 100%;
   overflow: hidden;
 }
 .zoom-area {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 50%;
   border: 1px solid #ccc;
   height: 400px;
@@ -44,8 +36,4 @@
 }
 .zoom-area.active {
   display: block;
-}
-.zoom-area img {
-  margin-top: -30px; /* JSで適切な値を設定する */
-  margin-left: -60px; /* JSで適切な値を設定する */
 }
