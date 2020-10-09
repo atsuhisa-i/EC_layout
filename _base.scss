@@ -245,6 +245,13 @@ nav#breadcrumb {
               }
             }
           }
+          .plus-icon.active {
+            & > span {
+              &:nth-child(2) {
+                display: none;
+              }
+            }
+          }
         }
         #size-spec-content {
           display: none;

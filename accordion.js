@@ -1,5 +1,6 @@
 $(".plus-icon").on("click", function() {
   $(".size-spec-open").slideToggle();
+  $(this).toggleClass("active")
 });
 
 var itemHeights = [];

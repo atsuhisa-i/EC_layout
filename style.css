@@ -454,6 +454,10 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
           transform: translateY(10px) rotate(90deg);
 }
 
+.product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon.active > span:nth-child(2) {
+  display: none;
+}
+
 .product-detail-inner .product-content .size-spec #size-spec-content {
   display: none;
 }
