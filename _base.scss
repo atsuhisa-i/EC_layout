@@ -340,6 +340,23 @@ footer {
       & > .footer-menu {
         margin-bottom: 5px;
       }
+      & > .footer-menu-brand {
+        margin-bottom: 5px;
+        & > .footer-option-brand {
+          display: none;
+        }
+      }
+      & > .footer-menu-category {
+        & > .footer-option-category {
+          display: none;
+        }
+      }
+      & > .footer-menu-collection {
+        margin-bottom: 5px;
+        & > .footer-option-collection {
+          display: none;
+        }
+      }
     }
   }
   .copyright {
