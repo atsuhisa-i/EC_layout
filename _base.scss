@@ -119,6 +119,12 @@ nav#breadcrumb {
   &-list {
     display: flex;
     flex-direction: column;
+    .m-lens-container {
+      width: 100%;
+      & > img {
+        width: 100%;
+      }
+    }
   }
 }
 

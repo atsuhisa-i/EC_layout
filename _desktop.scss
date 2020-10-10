@@ -121,9 +121,12 @@ nav .menu-title:hover ul {
     .product-img-list-item {
       border-right: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-      & > img {
-        width: 100%;
-      }
+      // .m-lens-container {
+      //   width: 100%;
+      //   & > img {
+      //     width: 100%;
+      //   }
+      // }
     }
   }
   .product-detail {
