@@ -589,6 +589,11 @@ footer .footer-list-item > .footer-menu-collection > .footer-option-collection {
   display: none;
 }
 
+footer .footer-list-item .footer-menu-button {
+  display: table;
+  cursor: pointer;
+}
+
 footer .copyright {
   padding: 15px;
   font-size: 10px;

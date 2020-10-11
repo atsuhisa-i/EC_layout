@@ -1,7 +1,6 @@
 #container {
   position: relative;
   background-color: white;
-  // height: 100vh;
   z-index: 2;
   transition: all 0.5s;
 }
@@ -52,8 +51,6 @@ a {
 .brands {
 border-top: 1px solid #ddd;
   .brand-lists {
-    // width: 600px;
-    // margin: 0 auto;
     & > li {
       font-size: 18px;
       font-weight: 600;
@@ -356,6 +353,10 @@ footer {
         & > .footer-option-collection {
           display: none;
         }
+      }
+      .footer-menu-button {
+        display: table;
+        cursor: pointer;
       }
     }
   }
