@@ -1,5 +1,21 @@
 $(".plus-icon").on("click", function() {
   $(".size-spec-open").slideToggle();
+  $(this).toggleClass("active")
+});
+
+$(".footer-menu-brand").on("click", function() {
+  $(".footer-option-brand").slideToggle();
+  $(this).toggleClass("active")
+});
+
+$(".footer-menu-category").on("click", function() {
+  $(".footer-option-category").slideToggle();
+  $(this).toggleClass("active")
+});
+
+$(".footer-menu-collection").on("click", function() {
+  $(".footer-option-collection").slideToggle();
+  $(this).toggleClass("active")
 });
 
 var itemHeights = [];

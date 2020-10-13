@@ -300,6 +300,14 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
           flex-direction: column;
 }
 
+.product-img-list .m-lens-container {
+  width: 100%;
+}
+
+.product-img-list .m-lens-container > img {
+  width: 100%;
+}
+
 .product-detail-inner {
   padding: 60px;
 }
@@ -454,6 +462,10 @@ nav#breadcrumb ul.breadcrum-pc li.breadcrumb-item {
           transform: translateY(10px) rotate(90deg);
 }
 
+.product-detail-inner .product-content .size-spec .size-spec-inner .plus-icon.active > span:nth-child(2) {
+  display: none;
+}
+
 .product-detail-inner .product-content .size-spec #size-spec-content {
   display: none;
 }
@@ -557,10 +569,81 @@ footer .footer-list-item > .footer-menu {
   margin-bottom: 5px;
 }
 
+footer .footer-list-item > .footer-menu-brand {
+  margin-bottom: 5px;
+}
+
+footer .footer-list-item > .footer-menu-brand > .footer-option-brand {
+  display: none;
+}
+
+footer .footer-list-item > .footer-menu-category > .footer-option-category {
+  display: none;
+}
+
+footer .footer-list-item > .footer-menu-collection {
+  margin-bottom: 5px;
+}
+
+footer .footer-list-item > .footer-menu-collection > .footer-option-collection {
+  display: none;
+}
+
+footer .footer-list-item .footer-menu-button {
+  display: table;
+  cursor: pointer;
+}
+
 footer .copyright {
   padding: 15px;
   font-size: 10px;
   color: #ddd;
+}
+
+.m-lens-container {
+  display: inline-block;
+  position: relative;
+}
+
+.m-lens {
+  position: absolute;
+  z-index: 2;
+  background: #f57716;
+  opacity: 0.3;
+  height: 172px;
+  width: 172px;
+}
+
+.m-lens {
+  display: none;
+}
+
+.m-lens-container:hover .m-lens {
+  display: block;
+}
+
+.m-lens-container img {
+  width: 100%;
+}
+
+.slides-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.zoom-area {
+  display: none;
+  position: fixed;
+  left: 50%;
+  border: 1px solid #ccc;
+  height: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.zoom-area.active {
+  display: block;
 }
 
 @media screen and (max-width: 963px) {
@@ -658,8 +741,8 @@ footer .copyright {
   .mobile-menu__main .mobile-menu__item .drop-nav > li > a {
     color: white;
   }
-  .product-img-list-item > img {
-    width: 100%;
+  .m-lens {
+    display: none !important;
   }
 }
 
@@ -783,9 +866,6 @@ footer .copyright {
   #product .product-img .product-img-list-item {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-  }
-  #product .product-img .product-img-list-item > img {
-    width: 100%;
   }
   #product .product-detail {
     -ms-flex-preferred-size: 50%;

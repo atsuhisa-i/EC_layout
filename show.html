@@ -77,22 +77,47 @@
       </nav>
       <section id="product">
         <div class="product-img">
-          <ul class="product-img-list">
-            <li class="product-img-list-item">
-              <img src="images/カーディガン.jpg" alt="">
-            </li>
-            <li class="product-img-list-item">
-              <img src="images/ネルシャツ.jpg" alt="">
-            </li>
-            <li class="product-img-list-item">
-              <img src="images/白シャツ.jpg" alt="">
-            </li>
-            <li class="product-img-list-item">
-              <img src="images/カーディガン.jpg" alt="">
-            </li>
-          </ul>
+          <div class="slides-container">
+            <ul class="product-img-list">
+              <li class="product-img-list-item">
+                <div class="cell">
+                  <div class="m-lens-container">
+                    <img src="images/カーディガン.jpg" alt="">
+                    <div class="m-lens"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-img-list-item">
+                <div class="cell">
+                  <div class="m-lens-container">
+                    <img src="images/ネルシャツ.jpg" alt="">
+                    <div class="m-lens"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-img-list-item">
+                <div class="cell">
+                  <div class="m-lens-container">
+                    <img src="images/白シャツ.jpg" alt="">
+                    <div class="m-lens"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-img-list-item">
+                <div class="cell">
+                  <div class="m-lens-container">
+                    <img src="images/カーディガン.jpg" alt="">
+                    <div class="m-lens"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="product-detail">
+          <div class="zoom-area">
+            <img src="" />
+          </div>
           <div class="product-detail-inner">
             <p class="product-detail-inner-brand">brand1</p>
             <h1 class="product-detail-inner-title">シャツ</h1>
@@ -111,7 +136,6 @@
                   <p>&nbsp;</p>
                   <p class="product-explain-eng">A simple design that is easy to mix and match. A box silhouette with a moderate width. It can be widely used by both men and women. A brand name is attached to the side seam.</p>
                 </div>
-                <!-- <span class="readmore"></span> -->
               </div>
               <div class="product-options">
                 <div class="product-option">
@@ -259,16 +283,31 @@
             <li class="footer-menu">
               <a href="#">HOME</a>
             </li>
-            <li class="footer-menu">
-              <a href="#">BRANDS</a>
+            <li class="footer-menu-brand">
+              <div class="footer-menu-button">BRANDS</div>
+              <ul class="footer-option-brand">
+                <li><a href="#">brand1</a></li>
+                <li><a href="#">brand2</a></li>
+                <li><a href="#">brand3</a></li>
+              </ul>
             </li>
-            <li class="footer-menu">
-              <a href="#">CATEGORIES</a>
+            <li class="footer-menu-category">
+              <div class="footer-menu-button">CATEGORIES</div>
+              <ul class="footer-option-category">
+                <li><a href="#">category1</a></li>
+                <li><a href="#">category2</a></li>
+                <li><a href="#">category3</a></li>
+              </ul>
             </li>
           </ul>
           <ul class="footer-list-item">
-            <li class="footer-menu">
-              <a href="#">COLLECTION</a>
+            <li class="footer-menu-collection">
+              <div class="footer-menu-button">COLLECTION</div>
+              <ul class="footer-option-collection">              
+                <li><a href="#">collection1</a></li>
+                <li><a href="#">collection2</a></li>
+                <li><a href="#">collection3</a></li>
+              </ul>
             </li>
             <li class="footer-menu">
               <a href="#">DEALERS</a>
@@ -333,5 +372,6 @@
   <script src="dropdown.js"></script>
   <script src="mobile-menu.js"></script>
   <script src="accordion.js"></script>
+  <script src="m-lens.js"></script>
 </body>
 </html>

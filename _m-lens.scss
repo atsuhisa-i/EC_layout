@@ -1,0 +1,39 @@
+.m-lens-container {
+  display: inline-block;
+  position: relative;
+}
+.m-lens {
+  position: absolute;
+  z-index: 2;
+  background: #f57716;
+  opacity: 0.3;
+  height: 172px;
+  width: 172px;
+}
+.m-lens {
+  display: none;
+}
+.m-lens-container:hover .m-lens {
+  display: block;
+}
+.m-lens-container img {
+  width: 100%;
+}
+
+.slides-container {
+  width: 100%;
+  overflow: hidden;
+}
+.zoom-area {
+  display: none;
+  position: fixed;
+  left: 50%;
+  border: 1px solid #ccc;
+  height: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  z-index: 100;
+}
+.zoom-area.active {
+  display: block;
+}
